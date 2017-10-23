@@ -190,15 +190,14 @@ public class HttpHelper {
 
 	public static void main(String[] args) {
 		System.out.println(getIpLocation("45.32.155.159"));
-//		String word = URLEncode("扬州瓜洲音乐节", "utf-8");
-//		System.out.println(word);
-//		String param = URLDecode("trialYear%2B2001%2B7%2B2001", "utf8");
-//		String Order = URLDecode("%E6%B3%95%E9%99%A2%E5%B1%82%E7%BA%A7", "utf8");
-//		System.out.println(param);
-//		System.out.println(Order);
 	}
 
 
+	/**
+	 * 获取ｉｐ归属地
+	 * @param ip
+	 * @return
+	 */
 	public static String getIpLocation(String ip){
 		String api = "http://www.ip138.com/ips138.asp?ip=";
 		String url = api + ip + "&datatype=text";
